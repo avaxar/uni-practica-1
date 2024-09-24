@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{indentfirst}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+
+\title{Programming Practicum Report: \\ Meeting 1 \\ Implementing a Book Inventory System}
+\author{\href{https://github.com/avaxar}{R. Ethan Halim}}
+\date{August 26th, 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Determining the Data Structure}
+
+The necessary data structure that is required has to be able to store a series of ISBN codes that represent the books stored in the inventory. The data structure needs to endure these three operations efficiently for the purpose of the system, with the stored elements being the ISBN codes:
+\begin{enumerate}
+    \item checking for element membership;
+    \item element appendage;
+    \item element removal;
+\end{enumerate}
+It is assumed that the most common function that would be used is to check whether an ISBN code is present inside of the structure. Therefore, the said data structure must be optimized for fast look-up operations.\\
+
+The first option that one may consider is dynamic arrays (equivalent to the STL type \texttt{std::vector} in C++ or the builtin type \texttt{list} in Python). However, in order to check element membership among elements stored in a dynamic array, one must iterate over the entire array, therefore resulting in the time complexity of $O(n)$, where $n$ is the amount of elements that the array has.\\
+
+A better option is sets (equivalent to the STL type \texttt{std::set} in C++ or the builtin type \texttt{set} in Python). They provide a faster time complexity of $O(\log n)$ for checking element membership, as they utilize red-black trees for logarithmically faster look-up operations. Additionally, hash map sets (equivalent to the STL type \texttt{std::unordered\_set} in C++) provide the fastest time complexity for look-up---$O(1)$, with the trade-off being more memory usage.\\
+
+Moreover, as for element insertions and removals, sets can perform with the similar time complexity of $O(\log n)$. The average time complexity of hash map sets for the two operations is similarly $O(1)$, and the worst time complexity is $O(n)$ upon the instance of hash map rehashing, as documented in \href{https://en.cppreference.com/w/cpp/container/unordered_set/insert}{\textbf{cppreference.com}}.\\
+
+Thus, preceding all functions, there is to be a global variable that is a set, which is accessible from anywhere in the code, whose name shall be set as \texttt{Inventory}. It will store the ISBN codes of all books in the inventory.
+
+\paragraph{Pseudocode}
+\begin{verbatim}
+let Inventory be an empty set of integers
+\end{verbatim}
+
+ISBN codes are sequences of 13 (formerly, 10) decimal digits separated by dashes. Because the positions of the separating dashes are fixed, and newer standards are backwards-compatible by adding trailing zero\,(s) preceding the most significant digit, they can therefore be safely stored inside of a scalar integer. While the pseudocode snippets in this document do not include the integer type, in C/C++, the integer type should ideally be an \texttt{uint64\_t} (64-bit unsigned integer), which can safely store any 19-digit combination of decimal numbers.
+
+\pagebreak
+\section{Inventory Checking}
+
+The function detailed in the pseudocode below implements a \texttt{check} function which checks whether the provided \texttt{ISBN} argument is present in the \linebreak \texttt{Inventory} set. It utilizes the set type's membership-look-up method, represented in the pseudocode as `\texttt{is in}` (equivalent to the \texttt{.find} method in C++ \texttt{std::set}s). The function returns \texttt{true} if the given \texttt{ISBN} is in the \texttt{Inventory}, and \texttt{false} otherwise.
+
+\paragraph{Pseudocode}
+\begin{verbatim}
+function check(ISBN) -> boolean:
+    let ISBN be an integer argument
+
+    if ISBN is in Inventory:
+        print "Book with ISBN ", ISBN, " is in the inventory."
+        return true
+    else:
+        print "Book with ISBN ", ISBN, " is not present."
+        return false
+\end{verbatim}
+
+\pagebreak
+\section{Adding to the Inventory}
+
+The function detailed in the pseudocode below implements an \texttt{add} function which appends the provided \texttt{ISBN} argument to the \texttt{Inventory}, given that there aren't any duplicates, in which case the function would return \texttt{false} upon unsuccessful appendage, and \texttt{true} otherwise. This function utilizes the \texttt{check} function from before, in order to anticipate for the aforementioned duplicate case condition. The appendage of the provided \texttt{ISBN} into the \linebreak \texttt{Inventory} is alike to the \texttt{.insert} method in C++ \texttt{std::set}s.
+
+\paragraph{Pseudocode}
+\begin{verbatim}
+function add(ISBN) -> boolean:
+    let ISBN be an integer argument
+
+    if check(ISBN):
+        # This prevents duplicates.
+        print "The book will not be added,",
+              "as it is already present in the inventory."
+        return false
+    else:
+        append ISBN to Inventory
+        print "Book has been added to the inventory."
+        return true
+\end{verbatim}
+
+\pagebreak
+\section{Removing from the Inventory}
+
+The function detailed in the pseudocode below implements a \texttt{remove} function which removes the provided \texttt{ISBN} argument from the \texttt{Inventory}, given that the ISBN has already been logged in the \texttt{Inventory} and from thereon, returns \texttt{true} for successful removal. Otherwise, if no such ISBN exists, the function returns \texttt{false} to indicate failure. The removal of the provided \texttt{ISBN} from the \texttt{Inventory} is alike to the \texttt{.erase} method in C++ \texttt{std::set}s.
+
+\paragraph{Pseudocode}
+\begin{verbatim}
+function remove(ISBN) -> boolean:
+    let ISBN be an integer argument
+
+    if check(ISBN):
+        remove ISBN from Inventory
+        print "Book has been removed from the inventory."
+        return true
+    else:
+        # This prevents triggering an exception.
+        print "Nothing is removed."
+        return false
+\end{verbatim}
+
+\pagebreak
+\section{Command-Line Interface}
+
+In order to ease the usage of the three functions implemented above, below is the pseudocode of a command-line interface (CLI) for utilizing the functions through the command-line. The output comes from the \texttt{print} statements included in the implementation of the functions.
+
+\paragraph{Pseudocode}
+\begin{verbatim}
+function main():
+    let Input be an integer variable
+    let ISBN be an integer variable
+
+    loop indefinitely:
+        print "Which operation would you like to do?"
+        print "(1) Checking a book's availability"
+        print "(2) Add a new book to the inventory"
+        print "(3) Remove a book from the inventory"
+        request Input from user
+
+        match Input:  # the same as `switch` in C++
+            case 1:
+                print "Enter the ISBN code of the book whose ",
+                      "availability you'd like to check:"
+                request ISBN from user
+                check(ISBN)
+                break
+
+            case 2:
+                print "Enter the ISBN code of the book you'd like "
+                      "to add in the inventory:"
+                request ISBN from user
+                add(ISBN)
+                break
+            
+            case 3:
+                print "Enter the ISBN code of the book you'd like "
+                      "to remove from the inventory:"
+                request ISBN from user
+                remove(ISBN)
+                break
+            
+            default:
+                print "Invalid option!"
+\end{verbatim}
+
+\end{document}
