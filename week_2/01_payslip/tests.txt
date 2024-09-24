@@ -1,0 +1,56 @@
+%INPUT
+Rick Sanchez
+5000000
+500000
+250000
+%OUTPUT
+Insert name: Insert gross salary: Insert installment: Insert insurance cost: 
+ -------------------------------- 
+| Payslip for Employee           |
+|--------------------------------|
+| Name         : Rick Sanchez    |
+| Gross Salary : Rp 5.000.000,00 |
+| Tax (20%)    : Rp 1.000.000,00 |
+| Installment  : Rp 500.000,00   |
+| Insurance    : Rp 250.000,00   |
+| Net Salary   : Rp 3.250.000,00 |
+ -------------------------------- 
+%END
+
+%INPUT
+Paul Muad'Dib Atreides
+2000002
+10000
+133333
+%OUTPUT
+Insert name: Insert gross salary: Insert installment: Insert insurance cost: 
+ --------------------------------------- 
+| Payslip for Employee                  |
+|---------------------------------------|
+| Name         : Paul Muad'Dib Atreides |
+| Gross Salary : Rp 2.000.002,00        |
+| Tax (20%)    : Rp 400.000,40          |
+| Installment  : Rp 10.000,00           |
+| Insurance    : Rp 133.333,00          |
+| Net Salary   : Rp 1.456.668,60        |
+ --------------------------------------- 
+%END
+
+%INPUT
+John Doe
+20000
+0
+1000
+%OUTPUT
+Insert name: Insert gross salary: Insert installment: Insert insurance cost: 
+ ----------------------------- 
+| Payslip for Employee        |
+|-----------------------------|
+| Name         : John Doe     |
+| Gross Salary : Rp 20.000,00 |
+| Tax (20%)    : Rp 4.000,00  |
+| Installment  : Rp 0,00      |
+| Insurance    : Rp 1.000,00  |
+| Net Salary   : Rp 15.000,00 |
+ ----------------------------- 
+%END

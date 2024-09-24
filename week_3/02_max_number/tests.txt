@@ -1,0 +1,53 @@
+%INPUT
+4
+5
+6
+%OUTPUT
+Input the first number: Input the second number: Input the third number: 
+The maximum is 6.
+%END
+
+%INPUT
+324
+32478
+54
+%OUTPUT
+Input the first number: Input the second number: Input the third number: 
+The maximum is 32478.
+%END
+
+%INPUT
+3273
+1982
+983
+%OUTPUT
+Input the first number: Input the second number: Input the third number: 
+The maximum is 3273.
+%END
+
+%INPUT
+53434
+-23234
+21245
+%OUTPUT
+Input the first number: Input the second number: Input the third number: 
+The maximum is 53434.
+%END
+
+%INPUT
+-34232
+24244
+24243
+%OUTPUT
+Input the first number: Input the second number: Input the third number: 
+The maximum is 24244.
+%END
+
+%INPUT
+-111111
+-333333
+-222222
+%OUTPUT
+Input the first number: Input the second number: Input the third number: 
+The maximum is -111111.
+%END

@@ -1,0 +1,53 @@
+%INPUT
+-1
+0
+1
+%OUTPUT
+Insert `a`: Insert `b`: Insert `c`: 
+The roots are distinct: -1 and 1.
+%END
+
+%INPUT
+-2
+4
+6
+%OUTPUT
+Insert `a`: Insert `b`: Insert `c`: 
+The roots are distinct: -1 and 3.
+%END
+
+%INPUT
+1
+2
+1
+%OUTPUT
+Insert `a`: Insert `b`: Insert `c`: 
+There is only one real root: -1.
+%END
+
+%INPUT
+-4
+-4
+-1
+%OUTPUT
+Insert `a`: Insert `b`: Insert `c`: 
+There is only one real root: -0.5.
+%END
+
+%INPUT
+100
+200
+400
+%OUTPUT
+Insert `a`: Insert `b`: Insert `c`: 
+The roots are imaginary.
+%END
+
+%INPUT
+-400
+-200
+-100,
+%OUTPUT
+Insert `a`: Insert `b`: Insert `c`: 
+The roots are imaginary.
+%END
