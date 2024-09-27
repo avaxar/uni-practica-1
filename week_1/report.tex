@@ -1,9 +1,14 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 
-\usepackage{indentfirst}
 \usepackage{graphicx} % Required for inserting images
-\usepackage{hyperref}
+\usepackage{hyperref} % For hyperlinks
+\usepackage{indentfirst}
+\usepackage{parskip}
+\usepackage[a4paper, margin=3.5cm]{geometry}
+
+\setlength{\parindent}{20pt} % Set paragraph indentation
+\setlength{\parskip}{1em} % Set paragraph space (one line)
 
 \title{Programming Practicum Report: \\ Meeting 1 \\ Implementing a Book Inventory System}
 \author{\href{https://github.com/avaxar}{R. Ethan Halim}}
@@ -21,13 +26,13 @@ The necessary data structure that is required has to be able to store a series o
     \item element appendage;
     \item element removal;
 \end{enumerate}
-It is assumed that the most common function that would be used is to check whether an ISBN code is present inside of the structure. Therefore, the said data structure must be optimized for fast look-up operations.\\
+It is assumed that the most common function that would be used is to check whether an ISBN code is present inside of the structure. Therefore, the said data structure must be optimized for fast look-up operations.
 
-The first option that one may consider is dynamic arrays (equivalent to the STL type \texttt{std::vector} in C++ or the builtin type \texttt{list} in Python). However, in order to check element membership among elements stored in a dynamic array, one must iterate over the entire array, therefore resulting in the time complexity of $O(n)$, where $n$ is the amount of elements that the array has.\\
+The first option that one may consider is dynamic arrays (equivalent to the STL type \texttt{std::vector} in C++ or the builtin type \texttt{list} in Python). However, in order to check element membership among elements stored in a dynamic array, one must iterate over the entire array, therefore resulting in the time complexity of $O(n)$, where $n$ is the amount of elements that the array has.
 
-A better option is sets (equivalent to the STL type \texttt{std::set} in C++ or the builtin type \texttt{set} in Python). They provide a faster time complexity of $O(\log n)$ for checking element membership, as they utilize red-black trees for logarithmically faster look-up operations. Additionally, hash map sets (equivalent to the STL type \texttt{std::unordered\_set} in C++) provide the fastest time complexity for look-up---$O(1)$, with the trade-off being more memory usage.\\
+A better option is sets (equivalent to the STL type \texttt{std::set} in C++ or the builtin type \texttt{set} in Python). They provide a faster time complexity of $O(\log n)$ for checking element membership, as they utilize red-black trees for logarithmically faster look-up operations. Additionally, hash map sets (equivalent to the STL type \texttt{std::unordered\_set} in C++) provide the fastest time complexity for look-up---$O(1)$, with the trade-off being more memory usage.
 
-Moreover, as for element insertions and removals, sets can perform with the similar time complexity of $O(\log n)$. The average time complexity of hash map sets for the two operations is similarly $O(1)$, and the worst time complexity is $O(n)$ upon the instance of hash map rehashing, as documented in \href{https://en.cppreference.com/w/cpp/container/unordered_set/insert}{\textbf{cppreference.com}}.\\
+Moreover, as for element insertions and removals, sets can perform with the similar time complexity of $O(\log n)$. The average time complexity of hash map sets for the two operations is similarly $O(1)$, and the worst time complexity is $O(n)$ upon the instance of hash map rehashing, as documented in \href{https://en.cppreference.com/w/cpp/container/unordered_set/insert}{\textbf{cppreference.com}}.
 
 Thus, preceding all functions, there is to be a global variable that is a set, which is accessible from anywhere in the code, whose name shall be set as \texttt{Inventory}. It will store the ISBN codes of all books in the inventory.
 
@@ -49,7 +54,8 @@ function check(ISBN) -> boolean:
     let ISBN be an integer argument
 
     if ISBN is in Inventory:
-        print "Book with ISBN ", ISBN, " is in the inventory."
+        print "Book with ISBN ", ISBN,
+                  " is in the inventory."
         return true
     else:
         print "Book with ISBN ", ISBN, " is not present."
@@ -59,7 +65,7 @@ function check(ISBN) -> boolean:
 \pagebreak
 \section{Adding to the Inventory}
 
-The function detailed in the pseudocode below implements an \texttt{add} function which appends the provided \texttt{ISBN} argument to the \texttt{Inventory}, given that there aren't any duplicates, in which case the function would return \texttt{false} upon unsuccessful appendage, and \texttt{true} otherwise. This function utilizes the \texttt{check} function from before, in order to anticipate for the aforementioned duplicate case condition. The appendage of the provided \texttt{ISBN} into the \linebreak \texttt{Inventory} is alike to the \texttt{.insert} method in C++ \texttt{std::set}s.
+The function detailed in the pseudocode below implements an \texttt{add} function which appends the provided \texttt{ISBN} argument to the \texttt{Inventory}, given that there aren't any duplicates, in which case the function would return \texttt{false} upon unsuccessful appendage, and \texttt{true} otherwise. This function utilizes the \texttt{check} function from before, in order to anticipate for the aforementioned duplicate case condition. The appendage of the provided \texttt{ISBN} into the \texttt{Inventory} is alike to the \texttt{.insert} method in C++ \texttt{std::set}s.
 
 \paragraph{Pseudocode}
 \begin{verbatim}
@@ -117,26 +123,23 @@ function main():
 
         match Input:  # the same as `switch` in C++
             case 1:
-                print "Enter the ISBN code of the book whose ",
-                      "availability you'd like to check:"
+                print "Enter the ISBN code of the book whose"
+                      " availability you'd like to check:"
                 request ISBN from user
                 check(ISBN)
                 break
-
             case 2:
-                print "Enter the ISBN code of the book you'd like "
-                      "to add in the inventory:"
+                print "Enter the ISBN code of the book you'd"
+                      " like to add in the inventory:"
                 request ISBN from user
                 add(ISBN)
                 break
-            
             case 3:
-                print "Enter the ISBN code of the book you'd like "
-                      "to remove from the inventory:"
+                print "Enter the ISBN code of the book you'd"
+                      " like to remove from the inventory:"
                 request ISBN from user
                 remove(ISBN)
                 break
-            
             default:
                 print "Invalid option!"
 \end{verbatim}

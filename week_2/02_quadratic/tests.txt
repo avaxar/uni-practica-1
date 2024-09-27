@@ -46,7 +46,7 @@ There are no real roots; the roots are complex.
 %INPUT
 -400
 -200
--100,
+-100
 %OUTPUT
 Insert `a`: Insert `b`: Insert `c`: 
 There are no real roots; the roots are complex.

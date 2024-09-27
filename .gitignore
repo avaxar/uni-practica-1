@@ -4,6 +4,17 @@
 !*/
 !makefile
 
+# LaTeX build files
+_minted-report
+_minted-tester
+*.pyg
+*.synctex(busy)
+*.log
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.aux
+
 # Couple of IDEs' temporary/cache directory
 *~
 *.swp
