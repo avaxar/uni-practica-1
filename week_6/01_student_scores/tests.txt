@@ -1,0 +1,129 @@
+%INPUT
+1
+42420
+69
+100
+%OUTPUT
+Enter the amount of students: 
+[Data for Student #1]
+- ID: - Midterm exam score: - Final exam score: 
+[Calculated Average(s) of All 1 Student(s)]
+- Student ID #42420: 84.5
+The overall average is 84.5.
+%END
+
+%INPUT
+2
+10001
+50
+75
+10002
+30
+90
+%OUTPUT
+Enter the amount of students: 
+[Data for Student #1]
+- ID: - Midterm exam score: - Final exam score: 
+[Data for Student #2]
+- ID: - Midterm exam score: - Final exam score: 
+[Calculated Average(s) of All 2 Student(s)]
+- Student ID #10001: 62.5
+- Student ID #10002: 60
+The overall average is 61.25.
+%END
+
+%INPUT
+3
+29999
+50
+75
+29998
+30
+90
+29997
+0
+100
+%OUTPUT
+Enter the amount of students: 
+[Data for Student #1]
+- ID: - Midterm exam score: - Final exam score: 
+[Data for Student #2]
+- ID: - Midterm exam score: - Final exam score: 
+[Data for Student #3]
+- ID: - Midterm exam score: - Final exam score: 
+[Calculated Average(s) of All 3 Student(s)]
+- Student ID #29999: 62.5
+- Student ID #29998: 60
+- Student ID #29997: 50
+The overall average is 57.5.
+%END
+
+%INPUT
+4
+999999
+50
+75
+999998
+30
+90
+999997
+0
+100
+999996
+100
+100
+%OUTPUT
+Enter the amount of students: 
+[Data for Student #1]
+- ID: - Midterm exam score: - Final exam score: 
+[Data for Student #2]
+- ID: - Midterm exam score: - Final exam score: 
+[Data for Student #3]
+- ID: - Midterm exam score: - Final exam score: 
+[Data for Student #4]
+- ID: - Midterm exam score: - Final exam score: 
+[Calculated Average(s) of All 4 Student(s)]
+- Student ID #999999: 62.5
+- Student ID #999998: 60
+- Student ID #999997: 50
+- Student ID #999996: 100
+The overall average is 68.125.
+%END
+
+%INPUT
+5
+5999999
+50
+75
+5999998
+30
+90
+5999997
+0
+100
+5999996
+100
+100
+5999995
+0
+0
+%OUTPUT
+Enter the amount of students: 
+[Data for Student #1]
+- ID: - Midterm exam score: - Final exam score: 
+[Data for Student #2]
+- ID: - Midterm exam score: - Final exam score: 
+[Data for Student #3]
+- ID: - Midterm exam score: - Final exam score: 
+[Data for Student #4]
+- ID: - Midterm exam score: - Final exam score: 
+[Data for Student #5]
+- ID: - Midterm exam score: - Final exam score: 
+[Calculated Average(s) of All 5 Student(s)]
+- Student ID #5999999: 62.5
+- Student ID #5999998: 60
+- Student ID #5999997: 50
+- Student ID #5999996: 100
+- Student ID #5999995: 0
+The overall average is 54.5.
+%END
