@@ -1,0 +1,139 @@
+%INPUT
+-5
+%OUTPUT
+n = 
+factorial(-5) = 1
+%END
+
+%INPUT
+-4
+%OUTPUT
+n = 
+factorial(-4) = 1
+%END
+
+%INPUT
+-3
+%OUTPUT
+n = 
+factorial(-3) = 1
+%END
+
+%INPUT
+-2
+%OUTPUT
+n = 
+factorial(-2) = 1
+%END
+
+%INPUT
+-1
+%OUTPUT
+n = 
+factorial(-1) = 1
+%END
+
+%INPUT
+0
+%OUTPUT
+n = 
+factorial(0) = 1
+%END
+
+%INPUT
+1
+%OUTPUT
+n = 
+factorial(1) = 1
+%END
+
+%INPUT
+2
+%OUTPUT
+n = 
+factorial(2) = 2
+%END
+
+%INPUT
+3
+%OUTPUT
+n = 
+factorial(3) = 6
+%END
+
+%INPUT
+4
+%OUTPUT
+n = 
+factorial(4) = 24
+%END
+
+%INPUT
+5
+%OUTPUT
+n = 
+factorial(5) = 120
+%END
+
+%INPUT
+6
+%OUTPUT
+n = 
+factorial(6) = 720
+%END
+
+%INPUT
+7
+%OUTPUT
+n = 
+factorial(7) = 5040
+%END
+
+%INPUT
+8
+%OUTPUT
+n = 
+factorial(8) = 40320
+%END
+
+%INPUT
+9
+%OUTPUT
+n = 
+factorial(9) = 362880
+%END
+
+%INPUT
+10
+%OUTPUT
+n = 
+factorial(10) = 3628800
+%END
+
+%INPUT
+11
+%OUTPUT
+n = 
+factorial(11) = 39916800
+%END
+
+%INPUT
+12
+%OUTPUT
+n = 
+factorial(12) = 479001600
+%END
+
+%INPUT
+13
+%OUTPUT
+n = 
+factorial(13) = 6227020800
+%END
+
+%INPUT
+14
+%OUTPUT
+n = 
+factorial(14) = 87178291200
+%END
