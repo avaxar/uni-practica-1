@@ -1,0 +1,48 @@
+%INPUT
+31
+27
+%OUTPUT
+a = b = 
+gcd(31, 27) = 1
+%END
+
+%INPUT
+161
+213
+%OUTPUT
+a = b = 
+gcd(161, 213) = 1
+%END
+
+%INPUT
+4
+12
+%OUTPUT
+a = b = 
+gcd(4, 12) = 4
+%END
+
+
+%INPUT
+120
+90
+%OUTPUT
+a = b = 
+gcd(120, 90) = 30
+%END
+
+%INPUT
+160
+120
+%OUTPUT
+a = b = 
+gcd(160, 120) = 40
+%END
+
+%INPUT
+500
+300
+%OUTPUT
+a = b = 
+gcd(500, 300) = 100
+%END

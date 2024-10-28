@@ -1,0 +1,399 @@
+%INPUT
+90
+94
+%OUTPUT
+a = b = 
+add(90, 94) = 184
+%END
+
+%INPUT
+-12
+-17
+%OUTPUT
+a = b = 
+add(-12, -17) = -29
+%END
+
+%INPUT
+25
+-15
+%OUTPUT
+a = b = 
+add(25, -15) = 10
+%END
+
+%INPUT
+87
+-30
+%OUTPUT
+a = b = 
+add(87, -30) = 57
+%END
+
+%INPUT
+88
+-34
+%OUTPUT
+a = b = 
+add(88, -34) = 54
+%END
+
+%INPUT
+-52
+-88
+%OUTPUT
+a = b = 
+add(-52, -88) = -140
+%END
+
+%INPUT
+-23
+-47
+%OUTPUT
+a = b = 
+add(-23, -47) = -70
+%END
+
+%INPUT
+-76
+-37
+%OUTPUT
+a = b = 
+add(-76, -37) = -113
+%END
+
+%INPUT
+-9
+-83
+%OUTPUT
+a = b = 
+add(-9, -83) = -92
+%END
+
+%INPUT
+24
+-12
+%OUTPUT
+a = b = 
+add(24, -12) = 12
+%END
+
+%INPUT
+-47
+-25
+%OUTPUT
+a = b = 
+add(-47, -25) = -72
+%END
+
+%INPUT
+-80
+-47
+%OUTPUT
+a = b = 
+add(-80, -47) = -127
+%END
+
+%INPUT
+64
+33
+%OUTPUT
+a = b = 
+add(64, 33) = 97
+%END
+
+%INPUT
+46
+-61
+%OUTPUT
+a = b = 
+add(46, -61) = -15
+%END
+
+%INPUT
+98
+24
+%OUTPUT
+a = b = 
+add(98, 24) = 122
+%END
+
+%INPUT
+-70
+54
+%OUTPUT
+a = b = 
+add(-70, 54) = -16
+%END
+
+%INPUT
+96
+-87
+%OUTPUT
+a = b = 
+add(96, -87) = 9
+%END
+
+%INPUT
+18
+34
+%OUTPUT
+a = b = 
+add(18, 34) = 52
+%END
+
+%INPUT
+2
+-48
+%OUTPUT
+a = b = 
+add(2, -48) = -46
+%END
+
+%INPUT
+1
+-24
+%OUTPUT
+a = b = 
+add(1, -24) = -23
+%END
+
+%INPUT
+51
+78
+%OUTPUT
+a = b = 
+add(51, 78) = 129
+%END
+
+%INPUT
+8
+9
+%OUTPUT
+a = b = 
+add(8, 9) = 17
+%END
+
+%INPUT
+40
+64
+%OUTPUT
+a = b = 
+add(40, 64) = 104
+%END
+
+%INPUT
+90
+-27
+%OUTPUT
+a = b = 
+add(90, -27) = 63
+%END
+
+%INPUT
+2
+35
+%OUTPUT
+a = b = 
+add(2, 35) = 37
+%END
+
+%INPUT
+100
+-15
+%OUTPUT
+a = b = 
+add(100, -15) = 85
+%END
+
+%INPUT
+24
+-33
+%OUTPUT
+a = b = 
+add(24, -33) = -9
+%END
+
+%INPUT
+-85
+4
+%OUTPUT
+a = b = 
+add(-85, 4) = -81
+%END
+
+%INPUT
+-87
+60
+%OUTPUT
+a = b = 
+add(-87, 60) = -27
+%END
+
+%INPUT
+-50
+-15
+%OUTPUT
+a = b = 
+add(-50, -15) = -65
+%END
+
+%INPUT
+59
+71
+%OUTPUT
+a = b = 
+add(59, 71) = 130
+%END
+
+%INPUT
+-80
+89
+%OUTPUT
+a = b = 
+add(-80, 89) = 9
+%END
+
+%INPUT
+-3
+35
+%OUTPUT
+a = b = 
+add(-3, 35) = 32
+%END
+
+%INPUT
+-36
+13
+%OUTPUT
+a = b = 
+add(-36, 13) = -23
+%END
+
+%INPUT
+-24
+60
+%OUTPUT
+a = b = 
+add(-24, 60) = 36
+%END
+
+%INPUT
+32
+7
+%OUTPUT
+a = b = 
+add(32, 7) = 39
+%END
+
+%INPUT
+3
+100
+%OUTPUT
+a = b = 
+add(3, 100) = 103
+%END
+
+%INPUT
+63
+87
+%OUTPUT
+a = b = 
+add(63, 87) = 150
+%END
+
+%INPUT
+-46
+0
+%OUTPUT
+a = b = 
+add(-46, 0) = -46
+%END
+
+%INPUT
+-79
+53
+%OUTPUT
+a = b = 
+add(-79, 53) = -26
+%END
+
+%INPUT
+87
+63
+%OUTPUT
+a = b = 
+add(87, 63) = 150
+%END
+
+%INPUT
+52
+31
+%OUTPUT
+a = b = 
+add(52, 31) = 83
+%END
+
+%INPUT
+-63
+-42
+%OUTPUT
+a = b = 
+add(-63, -42) = -105
+%END
+
+%INPUT
+-95
+-94
+%OUTPUT
+a = b = 
+add(-95, -94) = -189
+%END
+
+%INPUT
+53
+26
+%OUTPUT
+a = b = 
+add(53, 26) = 79
+%END
+
+%INPUT
+-96
+-83
+%OUTPUT
+a = b = 
+add(-96, -83) = -179
+%END
+
+%INPUT
+63
+91
+%OUTPUT
+a = b = 
+add(63, 91) = 154
+%END
+
+%INPUT
+13
+-39
+%OUTPUT
+a = b = 
+add(13, -39) = -26
+%END
+
+%INPUT
+52
+-23
+%OUTPUT
+a = b = 
+add(52, -23) = 29
+%END
+
+%INPUT
+43
+98
+%OUTPUT
+a = b = 
+add(43, 98) = 141
+%END
