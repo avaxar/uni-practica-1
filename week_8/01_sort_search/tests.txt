@@ -1,0 +1,77 @@
+%INPUT
+%OUTPUT
+[List of Students]
+1. Handi Ramadhan (9960312699): 90
+2. Rio Alfandra (9963959682): 55
+3. Ronaldo Valentino Uneputty (9950310962): 80
+4. Achmad Yaumil Fadjri R. (9970272750): 60
+5. Alivia Rahma Pramesti (9970293945): 70
+6. Ari Lutfianto (9952382180): 65
+7. Arief Budiman (9965653989): 60
+
+[Sorted Descending by NISN using Insertion Sort]
+1. Alivia Rahma Pramesti (9970293945): 70
+2. Achmad Yaumil Fadjri R. (9970272750): 60
+3. Arief Budiman (9965653989): 60
+4. Rio Alfandra (9963959682): 55
+5. Handi Ramadhan (9960312699): 90
+6. Ari Lutfianto (9952382180): 65
+7. Ronaldo Valentino Uneputty (9950310962): 80
+
+[Sorted Descending by Value using Insertion Sort]
+1. Handi Ramadhan (9960312699): 90
+2. Ronaldo Valentino Uneputty (9950310962): 80
+3. Alivia Rahma Pramesti (9970293945): 70
+4. Ari Lutfianto (9952382180): 65
+5. Achmad Yaumil Fadjri R. (9970272750): 60
+6. Arief Budiman (9965653989): 60
+7. Rio Alfandra (9963959682): 55
+
+[Sorted Descending by NISN using Selection Sort]
+1. Alivia Rahma Pramesti (9970293945): 70
+2. Achmad Yaumil Fadjri R. (9970272750): 60
+3. Arief Budiman (9965653989): 60
+4. Rio Alfandra (9963959682): 55
+5. Handi Ramadhan (9960312699): 90
+6. Ari Lutfianto (9952382180): 65
+7. Ronaldo Valentino Uneputty (9950310962): 80
+
+[Sorted Descending by Value using Selection Sort]
+1. Handi Ramadhan (9960312699): 90
+2. Ronaldo Valentino Uneputty (9950310962): 80
+3. Alivia Rahma Pramesti (9970293945): 70
+4. Ari Lutfianto (9952382180): 65
+5. Achmad Yaumil Fadjri R. (9970272750): 60
+6. Arief Budiman (9965653989): 60
+7. Rio Alfandra (9963959682): 55
+
+[Sorted Descending by NISN using Bubble Sort]
+1. Alivia Rahma Pramesti (9970293945): 70
+2. Achmad Yaumil Fadjri R. (9970272750): 60
+3. Arief Budiman (9965653989): 60
+4. Rio Alfandra (9963959682): 55
+5. Handi Ramadhan (9960312699): 90
+6. Ari Lutfianto (9952382180): 65
+7. Ronaldo Valentino Uneputty (9950310962): 80
+
+[Sorted Descending by Value using Bubble Sort]
+1. Handi Ramadhan (9960312699): 90
+2. Ronaldo Valentino Uneputty (9950310962): 80
+3. Alivia Rahma Pramesti (9970293945): 70
+4. Ari Lutfianto (9952382180): 65
+5. Achmad Yaumil Fadjri R. (9970272750): 60
+6. Arief Budiman (9965653989): 60
+7. Rio Alfandra (9963959682): 55
+
+[Searching for 9950310962]
+1. Ronaldo Valentino Uneputty (9950310962): 80
+
+[Change the Names of Students with 60 to "Joko"]
+1. Handi Ramadhan (9960312699): 90
+2. Rio Alfandra (9963959682): 55
+3. Ronaldo Valentino Uneputty (9950310962): 80
+4. Joko (9970272750): 60
+5. Alivia Rahma Pramesti (9970293945): 70
+6. Ari Lutfianto (9952382180): 65
+7. Joko (9965653989): 60
+%END
